@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>160728 ヒカラボデモ</title>
+  <script src="js/flexibility.js"></script>
+  <link rel="stylesheet" href="css/style_dist.css">
+  <script src="js/picturefill.js"></script>
+</head>
+<body>
+<header>
+  <img src="images/logo.png" alt="">
+  <ul>
+    <li><a href="">menu1</a></li>
+    <li><a href="">menu2</a></li>
+    <li><a href="">menu3</a></li>
+  </ul>
+</header>
+
+<div id="mainVisual">
+  <picture>
+    <source media="(max-width:420px) and (orientation:portrait)" srcset="images/small2.jpg">
+    <img srcset="images/small.jpg 640w,
+                  images/medium.jpg 1280w,
+                  images/large.jpg 2560w"
+         sizes="(max-width:2560px) 100vw, 2560px">
+  </picture>
+</div>
+
+<main>
+
+  <!--div*8>(h2>{animal$})+img[src="images/animal$.jpg"]+p>lorem3-->
+  <div>
+    <h2>animal1</h2>
+    <img src="images/animal1.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, repellendus.</p>
+  </div>
+  <div>
+    <h2>animal2</h2>
+    <img src="images/animal2.jpg" alt="">
+    <p>Cum dolorem id nemo quas recusandae repellendus totam vel voluptates?</p>
+  </div>
+  <div>
+    <h2>animal3</h2>
+    <img src="images/animal3.jpg" alt="">
+    <p>Animi eum labore rem? Atque libero nihil vel vero vitae!</p>
+  </div>
+  <div>
+    <h2>animal4</h2>
+    <img src="images/animal4.jpg" alt="">
+    <p>Ab amet cum eos esse fugit maiores molestias neque sint.</p>
+  </div>
+  <div>
+    <h2>animal5</h2>
+    <img src="images/animal5.jpg" alt="">
+    <p>Animi ducimus ea, eum laborum nostrum nulla officia quo voluptate.</p>
+  </div>
+  <div>
+    <h2>animal6</h2>
+    <img src="images/animal6.jpg" alt="">
+    <p>Amet deserunt excepturi necessitatibus numquam, quidem repellat repellendus similique voluptatibus?</p>
+  </div>
+  <div>
+    <h2>animal7</h2>
+    <img src="images/animal7.jpg" alt="">
+    <p>Assumenda consectetur deleniti earum excepturi laudantium natus provident repudiandae rerum.</p>
+  </div>
+  <div>
+    <h2>animal8</h2>
+    <img src="images/animal8.jpg" alt="">
+    <p>A, ab autem consequuntur ipsa libero modi nihil quos ullam.</p>
+  </div>
+
+</main>
+
+</body>
+</html>

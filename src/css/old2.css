@@ -1,0 +1,24 @@
+#mainVisual {
+  background-size: 100% auto;
+  width: 100%;
+  padding-top: 40%;
+  border: 1px solid #f00;
+}
+
+#mainVisual {
+  background-image: url(../images/large.jpg);
+}
+
+@media screen and (max-width: 1279px) and (min-resolution: 2dppx) {
+  #mainVisual {
+    background-image: url(../images/medium.jpg);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  #mainVisual {
+    background-image: url(../images/small.jpg);
+  }
+}
+
+
