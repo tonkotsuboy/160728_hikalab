@@ -22,12 +22,12 @@
 </header>
 <div id="mainVisual">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
     <!--
     orientation:portraitはIE11以下では効かない
     <source media="(max-width:420px) and (orientation:portrait)" srcset="images/small2.jpg">
     -->
-    <source media="(max-width:420px)" srcset="images/small2.jpg">
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(max-width:500px)" srcset="images/small2.jpg">
     <source srcset="images/small.jpg 640w,
                   images/medium.jpg 1280w,
                   images/large.jpg 2560w"
