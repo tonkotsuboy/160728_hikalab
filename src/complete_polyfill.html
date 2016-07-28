@@ -5,8 +5,10 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>160728 ヒカラボデモ</title>
-  <link rel="stylesheet" href="css/complete.css">
+  <title>ポリフィル使用版：160728 ヒカラボデモ</title>
+  <link rel="stylesheet" href="css/complete_polyfill.css">
+  <script src="js/picturefill.js"></script>
+  <script src="js/flexibility.js"></script>
 </head>
 <body>
 <header>
@@ -20,11 +22,17 @@
 </header>
 <div id="mainVisual">
   <picture>
-    <source media="(max-width:500px) and (orientation:portrait)" srcset="images/small2.jpg">
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <!--
+    orientation:portraitはIE11以下では効かない
+    <source media="(max-width:420px) and (orientation:portrait)" srcset="images/small2.jpg">
+    -->
+    <source media="(max-width:420px)" srcset="images/small2.jpg">
     <source srcset="images/small.jpg 640w,
                   images/medium.jpg 1280w,
                   images/large.jpg 2560w"
             sizes="(max-width:2560px) 100vw, 2560px">
+    <!--[if IE 9]></video><![endif]-->
     <img src="images/large.jpg">
   </picture>
 </div>

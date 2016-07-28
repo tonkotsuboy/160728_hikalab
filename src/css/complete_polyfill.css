@@ -47,7 +47,6 @@ img {
 
 /* ここからLiveCoding */
 
-
 header {
   padding: 10px;
   display: -webkit-box;
@@ -66,6 +65,7 @@ header {
 
 #mainVisual img {
 }
+
 @media screen and (max-width: 500px) {
   header {
     -webkit-box-orient: vertical;
@@ -99,7 +99,7 @@ li {
 }
 
 main {
-  padding: 10px;
+  padding: 15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -118,4 +118,15 @@ main {
   main div.animal {
     width: calc(50% - 10px);
   }
+}
+
+/* ポリフィルの設定 */
+header, ul, main {
+  -js-display: flex;
+}
+
+/* ポリフィル使用に伴う調整 */
+ul {
+  width: 200px;
+  justify-content: flex-end;
 }

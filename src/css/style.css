@@ -1,3 +1,4 @@
+/* base style */
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,6 @@
 
 html, body {
   width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -16,79 +16,78 @@ a {
   color: #222;
 }
 
-img {
-  display: block;
-}
-
-header {
-  padding: 10px;
-  -js-display: flex;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header ul {
-  width: 200px;
-  -js-display: flex;
-  display: flex;
+ul {
   list-style: none;
-  justify-content: space-around;
 }
 
-#mainVisual {
-  -js-display: flex;
-  display: flex;
-  justify-content: space-around;
-}
-
-#mainVisual img {
+img {
   max-width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  header {
-    flex-direction: column;
-  }
+/* animalクラス */
 
-  header ul {
-    margin-top: 10px;
-  }
-}
-
-main {
-  -js-display: flex;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-main > div {
-  width: calc(33.3% - 20px);
-  margin: 10px;
+.animal {
   box-shadow: 0 0 3px #aaa;
 }
 
-@media screen and (max-width: 600px) {
-  main > div {
-    width: calc(100% / 2 - 20px);
-  }
-}
-
-main > div h2 {
+.animal h1 {
   font-weight: normal;
   text-align: center;
   font-size: 1.2rem;
   padding: 5px;
 }
 
-main > div img {
-  width: 100%;
-}
-
-main > div p {
+.animal p {
   padding: 10px;
 }
 
-div.main_visual img {
-  width: 100vw;
+.animal img {
+  width: 100%;
+}
+
+/* ここからLiveCoding */
+
+
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mainVisual img {
+}
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.animal {
+  width: calc(33.3% - 10px);
+  margin: 5px;
+}
+
+@media (max-width: 500px) {
+  main div.animal {
+    width: calc(50% - 10px);
+  }
 }
